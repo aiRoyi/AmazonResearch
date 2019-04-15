@@ -3,6 +3,11 @@
 ## Compute:
 
 * Amazon Elastic Compute Cloud (EC2)
+** Start with EC2
+1. Create an instance(Amazon Linux 2 AMI) on AWS web and running it, save a keypair.pem file.
+2. In puttygen, load keypair.pem file and click button "Save private key" generate and save a ppk file to local.
+3. Open putty, input IP which is in the EC2 Description dashboard, and import the ppk file(Connection - SSH - Auth)
+4. Click "Open"
 
 * Elastic Load Balancing & Auto Scaling 
 
