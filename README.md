@@ -4,7 +4,7 @@
 
 * Amazon Elastic Compute Cloud (EC2)
 
-**Start with EC2
+**Start with EC2**
 
 1. Create an instance(Amazon Linux 2 AMI) on AWS web and running it, save a keypair.pem file.
 2. In puttygen, load keypair.pem file and click button "Save private key" generate and save a ppk file to local.
