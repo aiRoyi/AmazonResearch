@@ -35,11 +35,19 @@
 
 * Elastic File System (EFS)
 
-* Amazon CloudFront: Amazon CloudFront is a content delivery network(CDN)
+* Amazon CloudFront: Amazon CloudFront is a content delivery network(CDN)(https://aws.amazon.com/cloudfront/)
 
-* AWS Storage Gateway: Storage Gateway is a software appliance offers File, Volume and Tap Gateway configurations
+* AWS Storage Gateway: Storage Gateway is a software appliance offers File, Volume and Tap Gateway configurations(https://docs.aws.amazon.com/storagegateway/latest/userguide/StorageGatewayConcepts.html)
 
-* AWS Snowball
+    * File gateways
+    * Cached volume gateways
+    
+        *Both file gateways and cached volume gateways provide local caches to store frequently accessed data.*
+    
+    * Stored valume gateways: Stored volume gateways keep all files locally, so all stored data can be retrieve with reduced latency
+    * Tape gateways
+
+* AWS Snowball(https://docs.aws.amazon.com/snowball/latest/ug/whatissnowball.html)
 
 ### Create S3 Bucket
 
@@ -50,3 +58,11 @@
 5. Click "Next", you can set permissions and set properties, you can add Metadata for the file. Click "Upload" to upload the file
 6. If you want to get the file from link, click "Actions" -> "Make public"
 
+### Manage the storage space of EC2 instance using Amazon EBS
+
+1. In EC2 instance Overview, select ELASTIC BLOCK STORE -> Volumes
+2. Click "Create Volume", Set the Volume Type, Size, Availability Zone and etc...
+
+    *Note: If you don't create the volume in the same availability zone used by the EC2 instance where it should be used, you will not be   able to attach it! That is why you need to know the Availability Zone before creating a new volume.*
+
+3. After created, you can see the volume state is available in the checkbox.  Right-clicking on it and selecting the Attach Volume action
