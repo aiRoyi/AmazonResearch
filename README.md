@@ -97,4 +97,6 @@
     2. In the navigation pane, click "Security Groups". Locate and click the "rds-launch-wizard" security group
     3. On the "Inbound Rules" tab, click "Edit rules"
     4. Click "Save"
-8. Connect to your RDS instance by using the mysql client and replace your.endpoint.aws.com with your real endpoint URL (w/o including the host port): mysql -h your.endpoint.aws.com -u cloudacademy -p databasename
+8. Connect to your RDS instance by using the mysql client and replace your.endpoint.aws.com with your real endpoint URL (w/o including the host port): mysql -h your.endpoint.aws.com -u username -p databasename
+
+### Create 
