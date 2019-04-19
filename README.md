@@ -66,3 +66,35 @@
     *Note: If you don't create the volume in the same availability zone used by the EC2 instance where it should be used, you will not be   able to attach it! That is why you need to know the Availability Zone before creating a new volume.*
 
 3. After created, you can see the volume state is available in the checkbox.  Right-clicking on it and selecting the Attach Volume action
+
+## Database
+
+* Amazon RDS
+    * MySQL for RDS
+    * MSSQL for RDS
+    * MariaDB for RDS
+    * Oracle for RDS
+    * PostGres for RDS
+    * Amazon Aurora for RDS
+* Amzon NRDS
+    * DynamoDB
+    * Amazon Elasticache
+    * Amazon Neptune
+    
+### Create Amazon RDS Database
+
+1. Create an RDS Subnet Group
+    1. From the RDS dashboard, click Subnet Groups from the left-hand menu
+    2. Click "Create DB Subnet Group", Fill Name, Description, VPC ID
+    3. Click "Add all the subnets related to this VPC" and click "Create"
+2. Select "Databases" from the left menu and click "Create database"
+3. Choose the database engine and click "Next"
+4. Choose use case and click "Next"
+5. Fill "Specify DB Details" and click "Next"
+6. Click "Create database"
+7. Setup security group rules for connecting the RDS instance
+    1. Select "VPC" from Management Console dashboard
+    2. In the navigation pane, click "Security Groups". Locate and click the "rds-launch-wizard" security group
+    3. On the "Inbound Rules" tab, click "Edit rules"
+    4. Click "Save"
+8. Connect to your RDS instance by using the mysql client and replace your.endpoint.aws.com with your real endpoint URL (w/o including the host port): mysql -h your.endpoint.aws.com -u cloudacademy -p databasename
