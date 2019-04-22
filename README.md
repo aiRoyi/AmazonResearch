@@ -99,4 +99,6 @@
     4. Click "Save"
 8. Connect to your RDS instance by using the mysql client and replace your.endpoint.aws.com with your real endpoint URL (w/o including the host port): mysql -h your.endpoint.aws.com -u username -p databasename
 
-### Create 
+## Network
+
+* VPC(Virtual Private Network): VPCs allow you to create the balance between secure isolation and resource integration that fits your unique needs best. You have complete control over traffic coming into and out of your network and, using AWS route tables, network gateways, and subnets.
