@@ -102,3 +102,13 @@
 ## Network
 
 * VPC(Virtual Private Network): VPCs allow you to create the balance between secure isolation and resource integration that fits your unique needs best. You have complete control over traffic coming into and out of your network and, using AWS route tables, network gateways, and subnets.
+
+### Create VPC
+
+1. Select the VPC service from the Management Console dashboard
+2. Click "Your VPCs" in VPC dashboard
+3. Click "Create VPC"
+   * Name tag: This is the name for your VPC; doing so creates a tag with a key of Name and the value that you specify.
+   * CIDR block: 10.0.0.0/16. You should specify a CIDR block from the private (non-publicly routable) IP address ranges as specified in RFC 1918.
+   * IPv6 CIDR block: No IPv6 CIDR block. VPCs support IPv6 addresses but this is not a focus for this Lab.
+   * Tenancy: default. Dedicated tenancy ensures your instances run on single-tenant hardware. 
