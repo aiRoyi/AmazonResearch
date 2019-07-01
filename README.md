@@ -112,3 +112,5 @@
    * CIDR block: 10.0.0.0/16. You should specify a CIDR block from the private (non-publicly routable) IP address ranges as specified in RFC 1918.
    * IPv6 CIDR block: No IPv6 CIDR block. VPCs support IPv6 addresses but this is not a focus for this Lab.
    * Tenancy: default. Dedicated tenancy ensures your instances run on single-tenant hardware. 
+
+## Architicture Design
